@@ -37,6 +37,9 @@ void BraveExtensionManagement::RegisterForceInstalledExtensions() {
   extensions::ExternalPolicyLoader::AddExtension(
       &forced_list_pref, pdfjs_extension_id,
       extension_urls::kChromeWebstoreUpdateURL);
+  extensions::ExternalPolicyLoader::AddExtension(
+      &forced_list_pref, "bfdgpgibhagkpdlnjonhkabjoijopoge",
+      extension_urls::kChromeWebstoreUpdateURL);
   UpdateForcedExtensions(&forced_list_pref);
 }
 

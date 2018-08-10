@@ -1,6 +1,7 @@
 #include "brave/common/network_constants.h"
 
-const char kBraveUpdatesExtensionsEndpoint[] = "https://laptop-updates.brave.com/extensions";
+// const char kBraveUpdatesExtensionsEndpoint[] = "https://laptop-updates.brave.com/extensions";
+const char kBraveUpdatesExtensionsEndpoint[] = "http://localhost:8192/extensions";
 
 const char kEmptyDataURI[] = "data:application/javascript;base64,MA==";
 const char kJSDataURLPrefix[] = "data:application/javascript;base64,";
