@@ -10,6 +10,7 @@
 class ProfileCreationMonitor;
 
 namespace brave {
+class BraveReferralsService;
 class BraveStatsUpdater;
 }
 
@@ -48,6 +49,7 @@ class BraveBrowserProcessImpl : public BrowserProcessImpl {
   std::unique_ptr<brave_shields::HTTPSEverywhereService>
       https_everywhere_service_;
   std::unique_ptr<brave::BraveStatsUpdater> brave_stats_updater_;
+  std::unique_ptr<brave::BraveReferralsService> brave_referrals_service_;
   std::unique_ptr<extensions::BraveTorClientUpdater> tor_client_updater_;
 
   component_updater::ComponentUpdateService* component_updater(

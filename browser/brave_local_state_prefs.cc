@@ -5,11 +5,13 @@
 #include "brave/browser/brave_local_state_prefs.h"
 
 #include "brave/browser/brave_stats_updater.h"
+#include "brave/components/brave_referrals/brave_referrals_service.h"
 
 namespace brave {
 
 void RegisterLocalStatePrefs(PrefRegistrySimple* registry) {
   RegisterPrefsForBraveStatsUpdater(registry);
+  RegisterPrefsForBraveReferralsService(registry);
 }
 
 }  // namespace brave

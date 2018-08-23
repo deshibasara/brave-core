@@ -18,5 +18,11 @@ extern const char kWeekOfInstallation[];
 extern const char kAdBlockCurrentRegion[];
 extern const char kWidevineOptedIn[];
 extern const char kUseAlternatePrivateSearchEngine[];
+extern const char kReferralPromoCode[];
+extern const char kReferralDownloadID[];
+extern const char kReferralTimestamp[];
+extern const char kReferralAttemptTimestamp[];
+extern const char kReferralAttemptCount[];
+extern const char kReferralHeaders[];
 
 #endif
